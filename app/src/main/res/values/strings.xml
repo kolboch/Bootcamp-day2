@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ArchitectureApp</string>
+
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="login_error">Login error</string>
+    <string name="logged_in">Logged in!</string>
+</resources>
