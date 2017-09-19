@@ -1,13 +1,15 @@
 package pl.droidsonroids.architectureapp.ui.login
 
-import pl.droidsonroids.architectureapp.model.LoginService
+import pl.droidsonroids.architectureapp.model.AuthService
 import pl.droidsonroids.architectureapp.model.LoginServiceCallback
-import pl.droidsonroids.architectureapp.model.LoginValidator
+import pl.droidsonroids.architectureapp.model.Validator
 
-class LoginPresenter(private val view: LoginView) {
+class LoginPresenter(
+        private val view: LoginView,
+        private val validator: Validator,
+        private val loginService: AuthService)
+{
 
-    private val validator = LoginValidator()
-    private val loginService = LoginService()
 
     fun onCredentialsChanged(login: String, password: String) {
         validateCredentials(login, password)

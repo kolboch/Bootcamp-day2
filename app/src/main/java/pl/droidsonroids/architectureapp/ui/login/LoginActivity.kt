@@ -13,6 +13,8 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import kotlinx.android.synthetic.main.activity_login.*
 import pl.droidsonroids.architectureapp.R
+import pl.droidsonroids.architectureapp.model.LoginService
+import pl.droidsonroids.architectureapp.model.LoginValidator
 import pl.droidsonroids.architectureapp.ui.main.MainActivity
 
 
@@ -24,7 +26,7 @@ class LoginActivity : AppCompatActivity(), LoginView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        presenter = LoginPresenter(this)
+        presenter = LoginPresenter(this, LoginValidator(), LoginService())
 
         setTextChangedListeners()
         setLoginButtonClickListener()
