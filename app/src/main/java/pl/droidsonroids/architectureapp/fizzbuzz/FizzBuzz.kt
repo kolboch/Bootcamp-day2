@@ -6,13 +6,10 @@ package pl.droidsonroids.architectureapp.fizzbuzz
 class FizzBuzz {
 
     fun generateAnswer(number: Int): String {
-        var answer: String = ""
-        if (number % 3 == 0) {
-            answer = "fizz"
-        } else {
-            answer = number.toString()
+        return when {
+            number % 3 == 0 -> "fizz"
+            else -> number.toString()
         }
-        return answer
     }
 
 }
