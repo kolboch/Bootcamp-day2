@@ -5,6 +5,8 @@ package pl.droidsonroids.architectureapp.fizzbuzz
  */
 class FizzBuzz {
 
-
+    fun generateAnswer(number: Int): String {
+        return number.toString()
+    }
 
 }

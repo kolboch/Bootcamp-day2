@@ -1,5 +1,6 @@
 package pl.droidsonroids.architectureapp.fizzbuzz
 
+import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 
@@ -16,7 +17,14 @@ class FizzBuzzTest {
     }
 
     @Test
-    fun doesFizzBuzzExist() {
-        
+    fun fizzBuzzGeneratesNumber() {
+        assertEquals("1", fizzBuzz.generateAnswer(1))
     }
+
+    @Test
+    fun fizzBuzzWhenTwoReturnTwo() {
+        assertEquals("2", fizzBuzz.generateAnswer(2))
+    }
+
+    
 }
