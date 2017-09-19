@@ -22,9 +22,13 @@ class FizzBuzzTest {
     }
 
     @Test
-    fun fizzBuzzWhenTwoReturnTwo() {
+    fun whenTwoReturnTwo() {
         assertEquals("2", fizzBuzz.generateAnswer(2))
     }
 
-    
+    @Test
+    fun whenThreeReturnFizz() {
+        assertEquals("fizz", fizzBuzz.generateAnswer(3))
+    }
+
 }
