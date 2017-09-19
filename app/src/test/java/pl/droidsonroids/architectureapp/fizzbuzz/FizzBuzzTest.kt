@@ -28,12 +28,17 @@ class FizzBuzzTest {
 
     @Test
     fun whenThreeReturnFizz() {
-        assertEquals("fizz", fizzBuzz.generateAnswer(3))
+        assertEquals("Fizz", fizzBuzz.generateAnswer(3))
     }
 
     @Test
     fun whenFiveReturnBuzz() {
-        assertEquals("buzz", fizzBuzz.generateAnswer(5))
+        assertEquals("Buzz", fizzBuzz.generateAnswer(5))
+    }
+
+    @Test
+    fun whenFifteenReturnFizzBuzz() {
+        assertEquals("FizzBuzz", fizzBuzz.generateAnswer(15))
     }
 
 }
