@@ -27,18 +27,23 @@ class FizzBuzzTest {
     }
 
     @Test
-    fun whenThreeReturnFizz() {
+    fun whenThreeAnswerFizz() {
         assertEquals("Fizz", fizzBuzz.generateAnswer(3))
     }
 
     @Test
-    fun whenFiveReturnBuzz() {
+    fun whenFiveAnswerBuzz() {
         assertEquals("Buzz", fizzBuzz.generateAnswer(5))
     }
 
     @Test
-    fun whenFifteenReturnFizzBuzz() {
+    fun whenFifteenAnswerFizzBuzz() {
         assertEquals("FizzBuzz", fizzBuzz.generateAnswer(15))
+    }
+
+    @Test
+    fun whenContainsThreeAnswerFizz() {
+        assertEquals("Fizz", fizzBuzz.generateAnswer(13))
     }
 
 }
