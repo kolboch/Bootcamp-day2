@@ -31,4 +31,9 @@ class FizzBuzzTest {
         assertEquals("fizz", fizzBuzz.generateAnswer(3))
     }
 
+    @Test
+    fun whenFiveReturnBuzz() {
+        assertEquals("buzz", fizzBuzz.generateAnswer(5))
+    }
+
 }
